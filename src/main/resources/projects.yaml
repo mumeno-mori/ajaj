@@ -1,0 +1,32 @@
+app:
+  projects:
+    - id: your_project_id
+      name: "Your Project Name"
+      apps:
+        - id: fe
+          type: backend
+          path: \path\to\your\backend\project
+          development-platform: windows
+          watch:
+            - path: "*"
+              patterns:
+                - "*.gradle"
+            - path: src/main/resources/**
+              patterns:
+                - "*.yaml"
+                - "*.sql"
+            - path: src/main/java/**
+              patterns:
+                - "*.java"
+        - id: be
+          type: frontend
+          path: \path\to\your\frontend\project
+          development-platform: windows
+          watch:
+            - path: "*"
+              patterns:
+                - "*.yaml"
+            - path: lib/**
+              patterns:
+                - "*.dart"
+                - "*.json"

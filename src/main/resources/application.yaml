@@ -1,0 +1,36 @@
+buserver:
+  port: 9999
+spring:
+  application:
+    name: ajaj
+  config:
+    import: projects.yaml
+  main:
+    web-application-type: none
+  ai:
+    vectorstore:
+      pgvector:
+        schema-validation: true
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: gpt-oss:20b
+          temperature: 0.3
+      embedding:
+        options:
+          model: embeddinggemma
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: never
+app:
+  ai:
+    memory-deep: 50
+    rag:
+      context-results: 15
+      similarity-threshold: 0.7
+    rag-tool:
+      context-results: 10
+      similarity-threshold: 0.5
