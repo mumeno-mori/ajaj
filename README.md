@@ -1,4 +1,4 @@
-# ajaj – AI-powered Toolkit for Understanding and Improving Software Projects
+# ajaj - AI-powered Toolkit for Understanding and Improving Software Projects
 
 > **⚠️ Experimental Project Notice**  
 > **ajaj is currently in a very early, highly experimental and research-oriented state.**  
